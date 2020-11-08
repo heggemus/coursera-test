@@ -16,15 +16,13 @@ Good Bye Jim
 
 (function () {
 
-    var names = ["Karim", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    var names = ["Karim", "Donald Trump", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
     for (var i = 0; i < names.length; i++) {
       var firstletter = names[i].charAt(0).toLowerCase();
-      if (firstletter === 'j') {
+      if (firstletter === 'j' || firstletter === 'd') {
         byeSpeaker.speak(names[i]);
       } else {
         helloSpeaker.speak(names[i]);
       }
     }
-
-
 })();
